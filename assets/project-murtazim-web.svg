@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350" role="img" aria-label="Website mockup in green and blue">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#059A47"/>
+      <stop offset="1" stop-color="#1178B8"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="350" fill="#0B1220"/>
+  <rect width="800" height="350" fill="url(#g)" opacity="0.28"/>
+  <rect x="150" y="40" width="500" height="270" rx="14" fill="#0F1829" stroke="#ffffff" stroke-opacity="0.14"/>
+  <rect x="150" y="40" width="500" height="34" rx="14" fill="#111A2C"/>
+  <circle cx="174" cy="57" r="5" fill="#059A47"/><circle cx="192" cy="57" r="5" fill="#1178B8"/><circle cx="210" cy="57" r="5" fill="#F0A01E"/>
+  <rect x="176" y="100" width="210" height="18" rx="4" fill="#059A47"/>
+  <rect x="176" y="130" width="300" height="10" rx="4" fill="#ffffff" fill-opacity="0.22"/>
+  <rect x="176" y="150" width="260" height="10" rx="4" fill="#ffffff" fill-opacity="0.16"/>
+  <rect x="176" y="178" width="96" height="30" rx="8" fill="#1178B8"/>
+  <rect x="176" y="232" width="140" height="58" rx="10" fill="#ffffff" fill-opacity="0.07"/>
+  <rect x="330" y="232" width="140" height="58" rx="10" fill="#ffffff" fill-opacity="0.07"/>
+  <rect x="484" y="232" width="140" height="58" rx="10" fill="#ffffff" fill-opacity="0.07"/>
+  <rect x="470" y="96" width="154" height="110" rx="12" fill="url(#g)" opacity="0.8"/>
+</svg>

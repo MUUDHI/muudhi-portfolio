@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mohamuud Nuur Abdullahi (Muudhi) | Computer Science Student &amp; Web Developer</title>
+
+  <meta name="description"
+    content="Portfolio of Mohamuud Nuur Abdullahi (Muudhi), a Computer Science student and web developer building practical web applications and school management software.">
+  <meta name="author" content="Mohamuud Nuur Abdullahi">
+  <meta name="theme-color" content="#0B1220">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mohamuud Nuur Abdullahi (Muudhi) | Portfolio">
+  <meta property="og:description"
+    content="Computer Science student and web developer building practical web projects and digital systems.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <!-- Fonts: Plus Jakarta Sans + JetBrains Mono (system fallbacks are defined in main.css) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- Synchronous on purpose: applies the saved theme before first paint -->
+  <script src="js/theme.js"></script>
+  <script src="js/data.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#mainContent">Skip to main content</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a class="brand" href="#hero" aria-label="Muudhi, back to top">
+        <span class="brand-mark" aria-hidden="true">M</span>
+        <span class="brand-text">Muudhi<span>.</span></span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Main">
+        <a class="nav-link" href="#hero">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#experience">Experience</a>
+        <a class="nav-link" href="#certificates">Certificates</a>
+        <a class="nav-link" href="#cv">CV</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggleBtn" type="button" aria-label="Switch to light theme"
+          title="Switch to light theme">
+          <svg class="icon-moon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+          <svg class="icon-sun" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5" />
+            <line x1="12" y1="1" x2="12" y2="3" />
+            <line x1="12" y1="21" x2="12" y2="23" />
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+            <line x1="1" y1="12" x2="3" y2="12" />
+            <line x1="21" y1="12" x2="23" y2="12" />
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+          </svg>
+        </button>
+
+        <button class="icon-btn hamburger-btn" id="hamburgerBtn" type="button" aria-controls="mobileDrawer"
+          aria-expanded="false" aria-label="Open navigation menu">
+          <svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <line x1="3" y1="12" x2="21" y2="12" />
+            <line x1="3" y1="18" x2="21" y2="18" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile drawer (inert until opened) -->
+  <div class="drawer-overlay" id="drawerOverlay" aria-hidden="true"></div>
+  <aside class="mobile-drawer" id="mobileDrawer" role="dialog" aria-modal="true" aria-label="Site navigation" inert>
+    <div class="drawer-header">
+      <span class="brand">
+        <span class="brand-mark" aria-hidden="true">M</span>
+        <span class="brand-text">Muudhi<span>.</span></span>
+      </span>
+      <button class="icon-btn" id="closeDrawerBtn" type="button" aria-label="Close navigation menu">
+        <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </button>
+    </div>
+    <nav class="drawer-nav" aria-label="Mobile">
+      <a class="nav-link" href="#hero">Home</a>
+      <a class="nav-link" href="#about">About</a>
+      <a class="nav-link" href="#skills">Skills</a>
+      <a class="nav-link" href="#projects">Projects</a>
+      <a class="nav-link" href="#experience">Experience</a>
+      <a class="nav-link" href="#certificates">Certificates</a>
+      <a class="nav-link" href="#cv">CV</a>
+      <a class="nav-link" href="#contact">Contact</a>
+    </nav>
+  </aside>
+
+  <main id="mainContent">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero" aria-labelledby="heroHeadline">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="hero-tag">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span>Computer Science Student &bull; Web Developer</span>
+          </p>
+          <h1 class="hero-headline" id="heroHeadline">
+            Building practical web applications &amp; software <span class="gold">with clarity and purpose.</span>
+          </h1>
+          <p class="hero-intro">
+            Hi, I'm Mohamuud Nuur Abdullahi (Muudhi). I'm a Computer Science university student and web developer
+            focused on building practical, real-world software while developing a strong technical foundation in modern
+            web technologies.
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn--primary" href="#projects">
+              <span>View my projects</span>
+              <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </a>
+            <a class="btn btn--ghost" href="#cv">
+              <span>Get my CV</span>
+              <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
+              </svg>
+            </a>
+          </div>
+          <div class="socials" data-socials role="group" aria-label="Social links"></div>
+        </div>
+
+        <div class="hero-media">
+          <div class="hero-frame">
+            <!-- Replace assets/portrait.jpeg with your photo (e.g. assets/muudhi.jpg) -->
+            <img class="hero-image" src="assets/portrait.jpeg" alt="Portrait of Mohamuud Nuur Abdullahi (Muudhi)"
+              width="380" height="380" fetchpriority="high">
+            <div class="hero-badge">
+              <svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M13 2 4 14h7l-1 8 9-12h-7z" />
+              </svg>
+              <div>
+                <div class="hero-badge-label">Focus area</div>
+                <div class="hero-badge-value">Web Dev &amp; CS</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="projects" aria-labelledby="projectsTitle">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-eyebrow">Portfolio works</p>
+          <h2 class="section-title" id="projectsTitle">Selected Projects</h2>
+          <p class="section-subtitle">Real-world website and school management software projects.</p>
+        </header>
+        <div class="projects-grid" id="projectsGrid"></div>
+        <noscript>
+          <p class="empty-state">Enable JavaScript to see the project list.</p>
+        </noscript>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section section--alt" id="about" aria-labelledby="aboutTitle">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-eyebrow">Background &amp; approach</p>
+          <h2 class="section-title" id="aboutTitle">About Mohamuud</h2>
+          <p class="section-subtitle">Computer science student developing practical web-development skills through real
+            projects.</p>
+        </header>
+        <div class="card about-card">
+          <div>
+            <h3 class="about-title">Building practical software while strengthening CS fundamentals</h3>
+            <p class="about-text">I am an early-stage Computer Science university student actively developing practical
+              web-development skills. Rather than relying only on tutorials, I focus on learning through hands-on
+              projects that address real-world needs.</p>
+            <p class="about-text">I am building my technical foundation across HTML5, CSS3, JavaScript, and Python. My
+              goal is to continually refine my engineering discipline, write structured, maintainable code, and grow
+              into a capable software professional.</p>
+            <div class="about-stats" id="aboutStats"></div>
+          </div>
+          <div class="direction-box">
+            <h4>
+              <svg aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 14 14" />
+              </svg>
+              Current focus &amp; learning goals
+            </h4>
+            <ul class="direction-list" id="aboutDirection"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section" id="skills" aria-labelledby="skillsTitle">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-eyebrow">Technical competencies</p>
+          <h2 class="section-title" id="skillsTitle">Skills &amp; Toolkit</h2>
+          <p class="section-subtitle">Technologies and tools I use in my current learning and active projects.</p>
+        </header>
+        <div class="skills-grid" id="skillsGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section section--alt" id="experience" aria-labelledby="expTitle">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-eyebrow">Professional background</p>
+          <h2 class="section-title" id="expTitle">Experience &amp; Teaching</h2>
+          <p class="section-subtitle">Academic studies and teaching experience in mathematics, English, and computer
+            applications.</p>
+        </header>
+        <ol class="timeline" id="experienceList"></ol>
+      </div>
+    </section>
+
+    <!-- ============ CERTIFICATES ============ -->
+    <section class="section" id="certificates" aria-labelledby="certsTitle">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-eyebrow">Accreditation</p>
+          <h2 class="section-title" id="certsTitle">Certifications &amp; Credentials</h2>
+          <p class="section-subtitle">Credentials and verified coursework from ongoing studies.</p>
+        </header>
+        <div class="certs-grid" id="certificatesGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============ CV ============ -->
+    <section class="section section--alt" id="cv" aria-labelledby="cvTitle">
+      <div class="container">
+        <div class="card cv-card">
+          <div>
+            <p class="section-eyebrow">Curriculum vitae</p>
+            <h2 class="cv-title" id="cvTitle">Professional profile &amp; summary</h2>
+            <p class="cv-text">Preview my background highlights or download my CV in PDF format.</p>
+            <div class="cv-actions">
+              <button class="btn btn--ghost" id="previewCvBtn" type="button" aria-haspopup="dialog">
+                <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                  <circle cx="12" cy="12" r="3" />
+                </svg>
+                <span>Preview CV</span>
+              </button>
+              <a class="btn btn--primary" id="downloadCvBtn" href="assets/Mohamuud_Nuur_Abdullahi_CV.pdf" download>
+                <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                  <polyline points="7 10 12 15 17 10" />
+                  <line x1="12" y1="15" x2="12" y2="3" />
+                </svg>
+                <span>Download PDF</span>
+              </a>
+            </div>
+          </div>
+          <div class="cv-sheet" aria-hidden="true">
+            <div class="cv-sheet-head">
+              <div class="cv-line gold w-60"></div>
+              <div class="cv-line w-40"></div>
+            </div>
+            <div class="cv-line w-80"></div>
+            <div class="cv-line w-60"></div>
+            <div class="cv-line w-80"></div>
+            <div style="height: 12px"></div>
+            <div class="cv-line gold w-40"></div>
+            <div class="cv-line w-80"></div>
+            <div class="cv-line w-60"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact" aria-labelledby="contactTitle">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-eyebrow">Get in touch</p>
+          <h2 class="section-title" id="contactTitle">Let's Connect</h2>
+          <p class="section-subtitle">Open to student opportunities, freelance web projects, internships, and technical
+            collaboration.</p>
+        </header>
+
+        <div class="contact-grid">
+          <div class="card contact-panel">
+            <h3>Direct channels</h3>
+            <p class="contact-lead">Available for early-career opportunities, freelance projects, and collaboration.</p>
+            <ul class="contact-list" id="contactList"></ul>
+            <p class="contact-note">
+              <span id="contactLocation">Mogadishu, Somalia</span> &middot; Open to remote collaboration worldwide.
+            </p>
+          </div>
+
+          <div class="card contact-panel">
+            <h3>Send a message</h3>
+            <form id="contactForm" novalidate aria-label="Contact form">
+              <div class="form-group">
+                <label class="form-label" for="userName">Full name</label>
+                <input class="form-input" id="userName" name="name" type="text" autocomplete="name"
+                  placeholder="e.g. Ahmed Hassan" required aria-required="true" aria-describedby="nameError">
+                <p class="field-error" id="nameError"></p>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="userEmail">Email address</label>
+                <input class="form-input" id="userEmail" name="email" type="email" autocomplete="email"
+                  placeholder="name@example.com" required aria-required="true" aria-describedby="emailError">
+                <p class="field-error" id="emailError"></p>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="userMessage">Message</label>
+                <textarea class="form-textarea" id="userMessage" name="message"
+                  placeholder="Tell me about your project, role, or question..." required aria-required="true"
+                  aria-describedby="messageError"></textarea>
+                <p class="field-error" id="messageError"></p>
+              </div>
+              <button class="btn btn--primary btn--block" type="submit">
+                <span>Send message</span>
+                <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13" />
+                  <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                </svg>
+              </button>
+              <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h4>Mohamuud Nuur Abdullahi (Muudhi)</h4>
+          <p>Computer Science Student &amp; Web Developer</p>
+        </div>
+        <div class="socials" data-socials role="group" aria-label="Social links"></div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year">2026</span> Mohamuud Nuur Abdullahi. All rights reserved.</p>
+        <p class="mono">Built with HTML5, CSS3 &amp; vanilla JavaScript.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CV preview dialog -->
+  <dialog class="modal" id="cvDialog" aria-labelledby="cvDialogTitle">
+    <div class="modal-head">
+      <h3 class="modal-title" id="cvDialogTitle">Curriculum vitae</h3>
+      <button class="icon-btn" id="closeCvBtn" type="button" aria-label="Close CV preview">
+        <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </button>
+    </div>
+    <div class="modal-body" id="cvDialogBody"></div>
+    <div class="modal-foot">
+      <a class="btn btn--primary btn--sm" id="cvDialogDownload" href="assets/Mohamuud_Nuur_Abdullahi_CV.pdf"
+        download>Download PDF</a>
+    </div>
+  </dialog>
+</body>
+
+</html>
