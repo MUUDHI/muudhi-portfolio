@@ -48,7 +48,7 @@ const projectsData = [
       "Semantic HTML structure and clean CSS styling"
     ],
     technologies: ["HTML5", "CSS3", "JavaScript"],
-    liveUrl: "",   // Add live URL when available
+    liveUrl: "https://murtazim-academy.netlify.app/",   // Add live URL when available
     githubUrl: "https://github.com/MUUDHI" // Project repository link
   },
   {
@@ -65,7 +65,7 @@ const projectsData = [
       "Exam information and academic data organization"
     ],
     technologies: ["JavaScript", "HTML5", "CSS3", "Supabase", "Git & GitHub", "Vercel"],
-    liveUrl: "",   // Add live URL when available
+    liveUrl: "https://masms.muudhi.workers.dev/login",   // Add live URL when available
     githubUrl: "https://github.com/MUUDHI" // Project repository link
   }
 ];
